@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Club Website Design - Easy Tutorials</title>
+  <link rel="stylesheet" href="style.css">
+  
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body> 
+
+
+  <!-- NAVBAR  -->
+   <section class="header">
+  <header class="navbar">
+    <div class="logo">
+      <img src="images/logo.jpg" alt="CSIC Logo">
+      <h2>Computer Science Innovation Club</h2>
+    </div>
+
+    <!-- Mobile menu icon -->
+    <div class="menu-icon" id="menu-icon" onclick="toggleMenu()">☰</div>
+
+    <!-- Navigation links -->
+    <nav class="nav-links" id="nav-links">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+ 
+
+  <!-- ====== HERO IMAGE SECTION ====== -->
+<section class="hero-section">
+  <img src="images/banner.jpg" alt="University Campus">
+</section>
+
+<!-- ====== ABOUT BOX (Floating Style) ====== -->
+<section class="about-floating">
+  <div class="hero-content">
+  <h2>About Our Club</h2>
+  <p>
+    The <strong>Computer Science Innovation Club (CSIC)</strong> at World University
+    is dedicated to fostering innovation, creativity, and collaboration in technology.
+    We encourage students to explore new technologies, work on real-world projects, 
+    and develop skills that empower them to shape the future of computing.</p>
+   <a href="about.html" class="btn">Visit us to know more</a>
+  </div>
+</section>
+
+
+
+  <section class="facilities-section">
+  <h2 class="fade-in">Our Facilities</h2>
+  <p class="subtitle fade-in">
+    Explore our modern infrastructure that empowers innovation and learning.
+  </p>
+
+  <div class="facilities-container">
+
+    <!-- Facility 1 -->
+    <div class="facility-card fade-in">
+      <img src="images/library.jpg" alt="University Library">
+      <div class="facility-info">
+        <h3>University Library</h3>
+        <p>
+          Our well-equipped library offers a vast collection of books, research papers, and
+          digital resources to support your academic journey.
+        </p>
+      </div>
+    </div>
+
+    <!-- Facility 2 -->
+    <div class="facility-card fade-in">
+      <img src="images/lab.jpg" alt="Computer Labs">
+      <div class="facility-info">
+        <h3>Advanced Computer Labs</h3>
+        <p>
+          Equipped with high-performance systems and latest software for hands-on learning
+          and project development.
+        </p>
+      </div>
+    </div>
+
+    <!-- Facility 3 -->
+    <div class="facility-card fade-in">
+      <img src="images/seminar.jpg" alt="Seminar Hall">
+      <div class="facility-info">
+        <h3>Seminar Hall</h3>
+        <p>
+          A dedicated space for workshops, seminars, and tech talks that promote collaboration
+          and innovation among students.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Lightbox Popup (with Next/Prev) -->
+<div id="lightbox" class="lightbox" aria-modal="true" role="dialog">
+  <button class="lb-btn lb-prev" aria-label="Previous image">❮</button>
+  <span class="close" aria-label="Close">&times;</span>
+  <img class="lightbox-content" id="lightbox-img" alt="">
+  <p id="lightbox-caption"></p>
+  <button class="lb-btn lb-next" aria-label="Next image">❯</button>
+</div>
+
+<!-- ====== LOGO CAROUSEL SECTION ====== -->
+<section class="logo-carousel">
+  <h2>Our Technology Stack</h2>
+  <div class="logo-slider">
+    <div class="slide-track">
+      <!-- You can add or replace these logos -->
+      <div class="slide"><img src="images/google cloud.webp" alt="Google Cloud"></div>
+      <div class="slide"><img src="images/azure.jpg" alt="Microsoft Azure"></div>
+      <div class="slide"><img src="images/amazon.png" alt="amazon"></div>
+      <div class="slide"><img src="images/tcs.webp" alt="tcs"></div>
+      <div class="slide"><img src="images/meta.jpg" alt="meta"></div>
+      <div class="slide"><img src="images/infosys.webp" alt="infosys"></div>
+      <div class="slide"><img src="images/wipro.jpg" alt="wipro"></div>
+      <div class="slide"><img src="images/ibm.webp" alt="ibm"></div>
+      <div class="slide"><img src="images/google cloud.webp" alt="Google Cloud"></div>
+      <div class="slide"><img src="images/azure.jpg" alt="Microsoft Azure"></div>
+      <div class="slide"><img src="images/amazon.png" alt="amazon"></div>
+      <div class="slide"><img src="images/tcs.webp" alt="tcs"></div>
+      <div class="slide"><img src="images/meta.jpg" alt="meta"></div>
+      <div class="slide"><img src="images/infosys.webp" alt="infosys"></div>
+      <div class="slide"><img src="images/wipro.jpg" alt="wipro"></div>
+      <div class="slide"><img src="images/ibm.webp" alt="ibm"></div>
+      
+
+      <!-- Repeat once more for seamless looping --
+      <div class="slide"><img src="images/html.png" alt="HTML"></div>
+      <div class="slide"><img src="images/css.png" alt="CSS"></div>
+      <div class="slide"><img src="images/js.png" alt="JavaScript"></div>
+      <div class="slide"><img src="images/react.png" alt="React"></div>
+      <div class="slide"><img src="images/python.png" alt="Python"></div>
+      <div class="slide"><img src="images/java.png" alt="Java"></div>
+      <div class="slide"><img src="images/github.png" alt="GitHub"></div>
+      <div class="slide"><img src="images/vscode.png" alt="VS Code"></div>
+    </div>
+  </div>-->
+</section>
+
+<section class="testimonial-section">
+  <h2>What Our Students Say</h2>
+
+  <div class="testimonial-container">
+    <div class="testimonial-slide active">
+      <img src="images/faculty.jpg" alt="Ikjyot Singh">
+      <h3>Ikjyot Singh</h3>
+      <p>Student @World University</p>
+      <blockquote>
+        “Being a part of CS Innovation Club helped me explore coding, innovation, and teamwork. It’s an inspiring community that motivates every student to excel.”
+      </blockquote>
+    </div>
+
+    <div class="testimonial-slide">
+      <img src="images/faculty.jpg" alt="Mohpreet Singh">
+      <h3>Mohpreet Singh</h3>
+      <p>Student @World University</p>
+      <blockquote>
+        “The workshops and mentorship sessions have been transformative. The club gave me real-world exposure and confidence to present my ideas.”
+      </blockquote>
+    </div>
+
+    <div class="testimonial-slide">
+      <img src="images/faculty.jpg" alt="Harpreet Kaur">
+      <h3>Harpreet Kaur</h3>
+      <p>Student @World University</p>
+      <blockquote>
+        “I improved my technical and leadership skills with the club. It’s the best platform for learning beyond the classroom.”
+      </blockquote>
+
+      
+    </div>
+  </div>
+
+  <!---- Dots navigation -->
+  <div class="testimonial-dots">
+    <span class="dot active" data-slide="0"></span>
+    <span class="dot" data-slide="1"></span>
+    <span class="dot" data-slide="2"></span>
+  </div>
+</section>
+
+<!---testimonials--
+<section class="testimonials-section">
+  <h2 class="fade-in">What Our Students Say</h2>
+  <p class="subtitle fade-in">Hear what our members think about the Computer Science Innovation Club!</p>
+
+  <div class="testimonial-container">
+
+    <div class="testimonial-card fade-in">
+      <img src="images/student1.jpg" alt="Ikjyot Singh">
+      <p>
+        "Being a part of CS Innovation Club improved my teamwork and project-building skills. 
+        The workshops and coding events helped me grow technically and personally."
+      </p>
+      <h3>Ikjyot Singh</h3>
+      <div class="stars">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+      </div>
+    </div>
+
+    <div class="testimonial-card fade-in">
+      <img src="images/student2.jpg" alt="Mohpreet Singh">
+      <p>
+        "The club gave me a platform to explore AI and development with amazing mentors. 
+        Every event is both fun and educational!"
+      </p>
+      <h3>Mohpreet Singh</h3>
+      <div class="stars">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star-half-stroke"></i>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-----------Call to Action------->
+
+<section class="enroll-section">
+  <h2>Enroll with CS Innovation Club</h2>
+  <a href="contact.html" class="contact-link">CONTACT US</a>
+</section>
+
+
+<!-----------footer------->
+
+<section class="footer">
+  <h4>ABOUT US</h4>
+  <P>
+The <strong>Computer Science Innovation Club (CSIC)</strong> at World University is a community of passionate tech enthusiasts committed to learning, building, and sharing knowledge in the field of computer science.  
+We aim to inspire innovation through hands-on projects, workshops, and collaborative events that bridge creativity with technology.
+</p>
+        <div class="social-links">
+  <a href="https://github.com/csicsggswu" class="github"><i class="fab fa-github"></i></a>
+  <a href="https://www.instagram.com/csinnovationclub?igsh=MWpkY3V0cDcxbGhwOQ==" class="instagram"><i class="fab fa-instagram"></i></a>
+  <a href="https://www.linkedin.com/company/computer-science-innovation-club/" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+  <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+</div>
+        
+</section>
+
+
+  <!-- ===== JavaScript for Menu Toggle ===== -->
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("nav-links");
+      const icon = document.getElementById("menu-icon");
+
+      nav.classList.toggle("show");
+
+      // Change icon text between ☰ and ✖
+      if (nav.classList.contains("show")) {
+        icon.innerHTML = "✖"; // Close icon
+      } else {
+        icon.innerHTML = "☰"; // Menu icon
+      }
+    }
+  </script>
+
+  
+
+<script src="script.js"></script>
+</body>
+</html>
+ 

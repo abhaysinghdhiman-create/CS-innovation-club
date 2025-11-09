@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Club Website Design - Easy Tutorials</title>
+  <link rel="stylesheet" href="style.css">
+  
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body> 
+
+  <!-- ===== NAVBAR ===== -->
+   <section class="sub-header">
+  <header class="navbar">
+    <div class="logo">
+      <img src="images/logo.jpg" alt="CSIC Logo">
+      <h2>Computer Science Innovation Club</h2>
+    </div>
+
+    <!-- Mobile menu icon -->
+    <div class="menu-icon" id="menu-icon" onclick="toggleMenu()">☰</div>
+
+    <!-- Navigation links -->
+    <nav class="nav-links" id="nav-links">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    
+  </header>
+   </section>
+
+    <!-- ====== HERO / BANNER SECTION ====== -->
+<section class="about-banner">
+  <div class="banner-overlay"></div>
+  <div class="banner-content">
+    <h1>Contact Us</h1>
+    <p>Inspiring innovation, creativity, and excellence through collaboration.</p>
+  </div>
+</section>
+
+   <section class="contact-section">
+  <h2 class="fade-in">Get in Touch</h2>
+  <p class="subtitle fade-in">We’d love to hear from you. Reach out for collaborations, events, or queries.</p>
+
+  <div class="contact-container">
+
+    <!-- Left Side: Map & Details -->
+    <div class="contact-details fade-in">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3430.0732699118415!2d76.40354027551082!3d30.648844774619105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39102b282ac12b55%3A0x9b00c65dbf13e430!2sSri%20Guru%20Granth%20Sahib%20World%20University!5e0!3m2!1sen!2sin!4v1731012345678!5m2!1sen!2sin"
+        width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
+
+      <div class="info">
+        <div class="info-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <p><strong>Address:</strong> XYZ Road, ABC Building, Fatehgarh Sahib, Punjab, India</p>
+        </div>
+
+        <div class="info-item">
+          <i class="fa-solid fa-phone"></i>
+          <p><strong>Phone:</strong> 123456789<br><small>Mon–Fri, 9AM to 5PM</small></p>
+        </div>
+
+        <div class="info-item">
+          <i class="fa-solid fa-envelope"></i>
+          <p><strong>Email:</strong> csic.sggswu@gmail.com</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Side: Contact Form -->
+    <div class="contact-form fade-in">
+      <form action="#" method="POST">
+        <input type="text" placeholder="Enter your name" required>
+        <input type="email" placeholder="Enter your email address" required>
+        <input type="text" placeholder="Enter your subject" required>
+        <textarea placeholder="Write your message..." rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!--------footer----------->
+<section class="footer">
+  <h4>ABOUT US</h4>
+ <P>
+The <strong>Computer Science Innovation Club (CSIC)</strong> at World University is a community of passionate tech enthusiasts committed to learning, building, and sharing knowledge in the field of computer science.  
+We aim to inspire innovation through hands-on projects, workshops, and collaborative events that bridge creativity with technology.
+</p>
+        <div class="social-links">
+  <a href="https://github.com/csicsggswu" class="github"><i class="fab fa-github"></i></a>
+  <a href="https://www.instagram.com/csinnovationclub?igsh=MWpkY3V0cDcxbGhwOQ==" class="instagram"><i class="fab fa-instagram"></i></a>
+  <a href="https://www.linkedin.com/company/computer-science-innovation-club/" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+  <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+</div>
+        
+</section>
+
+<!-- ===== JavaScript for Menu Toggle ===== -->
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("nav-links");
+      const icon = document.getElementById("menu-icon");
+
+      nav.classList.toggle("show");
+
+      // Change icon text between ☰ and ✖
+      if (nav.classList.contains("show")) {
+        icon.innerHTML = "✖"; // Close icon
+      } else {
+        icon.innerHTML = "☰"; // Menu icon
+      }
+    }
+  </script>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

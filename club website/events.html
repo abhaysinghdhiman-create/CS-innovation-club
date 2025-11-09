@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Club Website Design - Easy Tutorials</title>
+  <link rel="stylesheet" href="style.css">
+  
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body> 
+
+   <!-- ===== NAVBAR ===== -->
+   <section class="sub-header">
+  <header class="navbar">
+    <div class="logo">
+      <img src="images/logo.jpg" alt="CSIC Logo">
+      <h2>Computer Science Innovation Club</h2>
+    </div>
+
+    <!-- Mobile menu icon -->
+    <div class="menu-icon" id="menu-icon" onclick="toggleMenu()">☰</div>
+
+    <!-- Navigation links -->
+    <nav class="nav-links" id="nav-links">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    
+  </header>
+   </section>
+
+    <!-- ====== HERO / BANNER SECTION ====== -->
+<section class="about-banner">
+  <div class="banner-overlay"></div>
+  <div class="banner-content">
+    <h1>Events</h1>
+    <p>Inspiring innovation, creativity, and excellence through collaboration.</p>
+  </div>
+</section>
+
+   <section class="events-section">
+  <h2 class="fade-in">Our Events</h2>
+  <p class="subtitle fade-in">
+    Stay updated with all our exciting workshops, hackathons, bootcamps, and tech summits organized by <strong>World University</strong>.
+  </p>
+
+  <div class="events-container">
+
+    <div class="event-card fade-in">
+      <div class="event-icon"><i class="fa-solid fa-laptop-code"></i></div>
+      <div class="event-content">
+        <h3>Hackathon 2025</h3>
+        <p class="event-date">March 12–13, 2025</p>
+        <p class="event-desc">A 24-hour coding challenge where students build innovative tech solutions to real-world problems.</p>
+      </div>
+    </div>
+
+    <div class="event-card fade-in">
+      <div class="event-icon"><i class="fa-solid fa-brain"></i></div>
+      <div class="event-content">
+        <h3>Data Science Bootcamp</h3>
+        <p class="event-date">April 2–6, 2025</p>
+        <p class="event-desc">Hands-on training covering Python, Machine Learning, and Data Visualization.</p>
+      </div>
+    </div>
+
+    <div class="event-card fade-in">
+      <div class="event-icon"><i class="fa-solid fa-robot"></i></div>
+      <div class="event-content">
+        <h3>AI Innovation Summit</h3>
+        <p class="event-date">May 20, 2025</p>
+        <p class="event-desc">A seminar by industry experts exploring the impact of Artificial Intelligence across domains.</p>
+      </div>
+    </div>
+
+    <div class="event-card fade-in">
+      <div class="event-icon"><i class="fa-solid fa-code"></i></div>
+      <div class="event-content">
+        <h3>Web Development Workshop</h3>
+        <p class="event-date">June 10–11, 2025</p>
+        <p class="event-desc">Hands-on training on HTML, CSS, and JavaScript for beginners and enthusiasts.</p>
+      </div>
+    </div>
+
+    <div class="event-card fade-in">
+      <div class="event-icon"><i class="fa-solid fa-lightbulb"></i></div>
+      <div class="event-content">
+        <h3>Startup Expo</h3>
+        <p class="event-date">August 1–3, 2025</p>
+        <p class="event-desc">Showcasing innovative student-led startups, projects, and creative ideas for the future.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+  <section class="footer">
+  <h4>ABOUT US</h4>
+  <P>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+       Laudantium nostrum cupiditate sapiente dolorem iste sit omnis quo,
+        consequatur illo commodi<br> modi rem, eos beatae voluptatum labore voluptatem, libero ducimus saepe.</P>
+        <div class="social-links">
+  <a href="https://github.com/csicsggswu" class="github"><i class="fab fa-github"></i></a>
+  <a href="https://www.instagram.com/csinnovationclub?igsh=MWpkY3V0cDcxbGhwOQ==" class="instagram"><i class="fab fa-instagram"></i></a>
+  <a href="https://www.linkedin.com/company/computer-science-innovation-club/" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+  <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+</div>
+        
+</section>
+
+  <footer class="events-footer">
+    <p>© 2025 World University | All Rights Reserved</p>
+  </footer>
+</section>
+
+
+
+<!-- ===== JavaScript for Menu Toggle ===== -->
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("nav-links");
+      const icon = document.getElementById("menu-icon");
+
+      nav.classList.toggle("show");
+
+      // Change icon text between ☰ and ✖
+      if (nav.classList.contains("show")) {
+        icon.innerHTML = "✖"; // Close icon
+      } else {
+        icon.innerHTML = "☰"; // Menu icon
+      }
+    }
+  </script>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
